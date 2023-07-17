@@ -15,21 +15,21 @@
 
 ### [Documentation](https://discord.js.org/#/docs/rpc/)
 
-### [Rich Presence Example](https://github.com/discordjs/RPC/blob/master/example)
+### [Rich Presence Example](https://github.com/Silent-Client/discord-rpc/blob/master/example)
 
-### __Browser__ Example
+### **Browser** Example
 
 ```javascript
-const clientId = '287406016902594560';
-const scopes = ['rpc', 'rpc.api', 'messages.read'];
+const clientId = "287406016902594560";
+const scopes = ["rpc", "rpc.api", "messages.read"];
 
-const client = new RPC.Client({ transport: 'websocket' });
+const client = new RPC.Client({ transport: "websocket" });
 
-client.on('ready', () => {
-  console.log('Logged in as', client.application.name);
-  console.log('Authed for user', client.user.username);
+client.on("ready", () => {
+	console.log("Logged in as", client.application.name);
+	console.log("Authed for user", client.user.username);
 
-  client.selectVoiceChannel('81384788862181376');
+	client.selectVoiceChannel("81384788862181376");
 });
 
 // Log in to RPC with client id
